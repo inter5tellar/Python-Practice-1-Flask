@@ -1,0 +1,38 @@
+<!--Parent Template: 'layout.html'-->
+<!--Children Templates: home.html, questions.html,
+    calculations.html, blank.html-->
+    <!DOCTYPE html>
+    <html>
+        <!--Includes 1st block and a link to the .css to receive its coding.
+            Since this is the parent template, all templates which
+            use it will also be affected by the .css coding.-->
+        <head>
+            <meta charset="utf-8" />
+            <title>{% block title %}{% endblock %}</title>
+            <link rel="stylesheet" type="text/css" href=
+            "{{ url_for('static', filename='site.css') }}" />
+        </head>
+        <!--Navigation bar to the individual pages is in the parent template so
+            it will be featured on all child template pages.-->
+        <body>
+            <div class="navbar">
+                <a href="{{ url_for('home') }}" class="navbar-item">Home</a>
+                <a href="{{ url_for('questions') }}" class="navbar-item">Test Yourself</a>
+                <a href="{{ url_for('calculations') }}" class="navbar-item">View Calculations & Answers</a>
+                <a href="{{ url_for('blank') }}" class="navbar-item">Blank</a>
+            </div>
+    
+            <!--2nd block, Footer on all pages-->
+            <div class="body-content">
+                {% block content %}
+                {% endblock %}
+                <hr/>
+                <footer>
+                    <p>
+                    <span class="message">It's {{ date.strftime("%A, %d %B, %Y at %X") }}.</span><br>
+                    Chelsey H.
+                    </p>
+                </footer>
+            </div>
+        </body>
+    </html>
