@@ -1,0 +1,70 @@
+<!--Child Template, extends Parent Template 'layout.html'-->
+{% extends "layout.html" %}
+<!--Title Block-->
+{% block title %}
+Home Page
+{% endblock %}
+<!--Content Block-->
+{% block content %}
+<!--Image & Headings-->
+<h1>Heading</h1>
+<img src="{{url_for('static', filename='nasalogo.jpg')}}" class="center resize">
+<h2>Heading 2</h2>
+<h3>Heading 3</h3>
+<p>Home page for the site.</p>
+<!--div for social media links spacing-->
+<div class="row">
+    <div class="column">
+        <a href="https://twitter.com/creker_theboyz?lang=en" title="The Boyz - Cre.ker Entertainment Twitter"><img src="https://i.pinimg.com/236x/28/90/ba/2890bac9ba41e52707f36268231dfe9e--twitter-icon-the-twitter.jpg" class="center icon"></a>
+    </div>
+    <div class="column">
+        <a href="https://twitter.com/WE_THE_BOYZ" title="The Boyz - Member Twitter"><img src="https://i.pinimg.com/236x/28/90/ba/2890bac9ba41e52707f36268231dfe9e--twitter-icon-the-twitter.jpg" class="center icon"></a>
+    </div>
+    <div class="column">
+        <a href="https://www.youtube.com/c/THEBOYZofficial" title="The Boyz - Youtube"><img src="https://seeklogo.net/wp-content/uploads/2020/03/YouTube-icon-SVG.png" class="center icon"></a>
+    </div>
+</div>
+
+<!--Content Block-->
+<div class="body-content">
+    <!--Form-->
+    <h2>Survey</h2>
+    <form action="" method="post" role="form">
+        { { form.csrf }}
+    <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="What's your name?">
+
+        <!-- class="form-control" -->
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" placeholder="What's your email?">
+
+        <label for="favorite">Favorite Blank:</label>
+        <input type="text" id="favorite" name="favorite" placeholder="What's your favorite blank?">
+
+        <label for="suggest">Suggestions:</label>
+        <input type="text" id="suggest" name="suggest" placeholder="Blank?">
+    </div>
+    <button type="submit">Submit</button>
+    <button type="reset" value="REFRESH">Reset</button>
+    </form>
+    <!--Accept input and give success message or give error message-->
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            {% for message in messages %}
+                {% if "Error" not in message[1]: %}
+                    <div class="alert alert-info">
+                        <span class="message">Thank you!</span>
+                        { { message[1] }}
+                    </div>
+                {% endif %}
+                {% if "Error" in message[1]: %}
+                    <div class="alert alert-warning">
+                        { { message[1] }}
+                    </div>
+                {% endif %}
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
+</div>
+{% endblock %}

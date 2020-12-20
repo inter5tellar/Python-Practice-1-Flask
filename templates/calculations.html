@@ -1,0 +1,124 @@
+<!--Child Template, extends Parent Template 'layout.html'-->
+{% extends "layout.html" %}
+<!--Title Block-->
+{% block title %}
+Calculations
+{% endblock %}
+<!--Content Block-->
+{% block content %}
+<p>
+<b>Notes:</b><br>
+INFO HERE
+
+<!--Table-->
+<table style="width:100%">
+    <tr>
+        <th>Time</th>
+        <th>X</th>
+        <th>Y</th>
+        <th>Z</th>
+    </tr>
+    <tr>
+        <td>Sangyeon</td>
+        <td><img src="{{url_for('static', filename='nasalogo.jpg')}}" class="center resize-members"></td>
+        <td>Birthdate: Nov. 4, 1996<br>
+            Nationality: Korean<br>
+            Height: 176cm<br></td>
+        <td>Leader<br>
+            Main Vocalist</td>
+    </tr>
+    <tr>
+        <td>Jacob</td>
+        <td><img src="{{url_for('static', filename='nasalogo.jpg')}}" class="center resize-members"></td>
+        <td>Birthdate: May 30, 1997<br>
+            Nationality: Canadian<br>
+            Height: 175cm<br></td>
+        <td>Lead Vocalist</td>
+    </tr>
+    <tr>
+        <td>Younghoon</td>
+        <td><img src="{{url_for('static', filename='nasalogo.jpg')}}" class="center resize-members"></td>
+        <td>Birthdate: Aug. 8, 1997<br>
+            Nationality: Korean<br>
+            Height: 183cm<br></td>
+        <td>Visual<br>
+            Vocalist</td>
+    </tr>
+    <tr>
+        <td>Hyunjae</td>
+        <td><img src="{{url_for('static', filename='nasalogo.jpg')}}" class="center resize-members"></td>
+        <td>Birthdate: Dec. 13, 1997<br>
+            Nationality: Korean<br>
+            Height: 181cm<br></td>
+        <td>Lead Dancer<br>
+            Lead Vocalist<br>
+            Visual</td>
+    </tr>
+    <tr>
+        <td>Juyeon</td>
+        <td><img src="{{url_for('static', filename='nasalogo.jpg')}}" class="center resize-members"></td>
+        <td>Birthdate: Jan. 15, 1998<br>
+            Nationality: Korean<br>
+            Height: 181cm<br></td>
+        <td>Main Dancer<br>
+            Vocalist<br>
+            Visual</td>
+    </tr>
+    <tr>
+        <td>Kevin</td>
+        <td><img src="{{url_for('static', filename='nasalogo.jpg')}}" class="center resize-members"></td>
+        <td>Birthdate: Feb. 23, 1998<br>
+            Nationality: Korean-Canadian<br>
+            Height: 176cm<br></td>
+        <td>Main Vocalist</td>
+    </tr>
+    <tr>
+        <td>New</td>
+        <td><img src="{{url_for('static', filename='nasalogo.jpg')}}" class="center resize-members"></td>
+        <td>Birthdate: Apr. 26, 1998<br>
+            Nationality: Korean<br>
+            Height: 177cm<br></td>
+        <td>Main Vocalist</td>
+    </tr>
+    <tr>
+        <td>Q</td>
+        <td><img src="{{url_for('static', filename='nasalogo.jpg')}}" class="center resize-members"></td>
+        <td>Birthdate: Nov. 5, 1998<br>
+            Nationality: Korean<br>
+            Height: 175cm<br></td>
+        <td>Main Dancer<br>
+            Vocalist</td>
+    </tr>
+    <tr>
+        <td>Juhakhyeon</td>
+        <td><img src="{{url_for('static', filename='nasalogo.jpg')}}" class="center resize-members"></td>
+        <td>Birthdate: Mar. 9, 1999<br>
+            Nationality: Korean<br>
+            Height: 175cm<br></td>
+        <td>Lead Dancer<br>
+            Vocalist<br>
+            Rapper</td>
+    </tr>
+    <tr>
+        <td>Sunwoo</td>
+        <td><img src="{{url_for('static', filename='nasalogo.jpg')}}" class="center resize-members"></td>
+        <td>Birthdate: Apr. 12, 2000<br>
+            Nationality: Korean<br>
+            Height: 177.4cm<br></td>
+        <td>Main Rapper
+            Vocalist</td>
+    </tr>
+    <tr>
+        <td>Eric</td>
+        <td><img src="{{url_for('static', filename='nasalogo.jpg')}}" class="center resize-members"></td>
+        <td>Birthdate: Dec. 22, 2000<br>
+        Nationality: Korean-American<br>
+        Height: 174cm<br></td>
+        <td>Lead Dancer<br>
+            Lead Rapper<br>
+            Vocalist<br>
+            Maknae</td>
+    </tr>
+</table>
+</p>
+{% endblock %}

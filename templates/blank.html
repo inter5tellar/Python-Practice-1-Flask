@@ -1,0 +1,40 @@
+<!--Child Template, extends Parent Template 'layout.html'-->
+{% extends "layout.html" %}
+<!--Title Block-->
+{% block title %}
+Placeholder Page
+{% endblock %}
+{% block content %}
+<!--Intro-->
+<img src="{{url_for('static', filename='nasalogo.jpg')}}" class="center">
+<p>Paragraph</p>
+<p>Paragraph 2 
+</p>
+<!--Ordered List-->
+<ol>
+    <li>List Item</li>
+    <li>List Item</li>
+    <li>List Item</li>
+    <li>List Item</li>
+    <li>List Item</li>
+    <li>List Item</li>
+    <li>List Item</li>
+    <li>List Item</li>
+</ol>
+<!--Images with descriptions-->
+<div class="body-content">
+    <p></p>
+    <img src="{{url_for('static', filename='nasalogo.jpg')}}" class="center resize">
+    <h2>Description 1</h2><br><br>
+    <img src="{{url_for('static', filename='nasalogo.jpg')}}" class="center resize">
+    <h2>Description 2</h2><br><br>
+    <img src="{{url_for('static', filename='nasalogo.jpg')}}" class="center resize">
+    <h2>Description 3</h2><br><br>
+    <img src="{{url_for('static', filename='nasalogo.jpg')}}" class="center resize">
+    <h2>Description 4</h2><br><br>
+    <img src="{{url_for('static', filename='nasalogo.jpg')}}" class="center resize">
+    <h2>Description 5</h2><br><br>
+    <img src="{{url_for('static', filename='nasalogo.jpg')}}" class="center resize">
+    <h2>Description 6</h2>
+</div>
+{% endblock %}

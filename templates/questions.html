@@ -1,0 +1,71 @@
+<!--Child Template, extends Parent Template 'layout.html'-->
+{% extends "layout.html" %}
+<!--Title Block-->
+{% block title %}
+Test Yourself
+{% endblock %}
+<!--Content Block-->
+{% block content %}
+<p>Introduction Information
+</p>
+<!--Unordered List-->
+<ul>
+    <li>Studio Albums</li>
+        <ul>
+            <li>Reveal</li>
+                <ul>
+                    <li>Released: 2/10/20</li>
+                    <li>Peaked: 1st</li>
+                </ul>
+        </ul>
+    <li>Extended Plays</li>
+        <ul>
+            <li>The First</li>
+                <ul>
+                    <li>Released: 12/6/17</li>
+                    <li>Peaked: 3rd</li>
+                </ul>
+            <li>The Start</li>
+                <ul>
+                    <li>Released: 4/3/18</li>
+                    <li>Peaked: 2nd</li>
+                </ul>
+            <li>The Only</li>
+                <ul>
+                    <li>Released: 11/29/18</li>
+                    <li>Peaked: 3rd</li>
+                </ul>
+            <li>Dreamlike</li>
+                <ul>
+                    <li>Released: 8/19/19</li>
+                    <li>Peaked: 2nd</li>
+                </ul>
+            <li>Tattoo</li>
+                <ul>
+                    <li>Released: 11/6/19</li>
+                    <li>Peaked: -</li>
+                </ul>
+        </ul>
+    <li>Single Albums</li>
+        <ul>
+            <li>The Sphere</li>
+                <ul>
+                    <li>Released: 9/5/18</li>
+                    <li>Peaked: 4th</li>
+                </ul>
+            <li>Bloom Bloom</li>
+                <ul>
+                    <li>Released: 4/29/19</li>
+                    <li>Peaked: 2nd</li>
+                </ul>
+        </ul>
+    <li>Singles</li>
+        <ul>
+            <li>White</li>
+                <ul>
+                    <li>Released: 2019</li>
+                    <li>Peaked: -</li>
+                </ul>
+        </ul>
+</ul>
+{% endblock %}
