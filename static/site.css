@@ -1,0 +1,103 @@
+body {
+    background-color: #f2cd4d;
+}
+
+/*A class to alter text*/
+.message {
+    font-weight: 500;
+}
+
+/*To center images*/
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Ordered List*/
+ol {
+    text-align: center;
+}
+
+/*Navigation links to the pages*/
+.navbar {
+    background-color: #5290bf;
+    font-size: 1em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    padding: 8px 5px 8px 5px;
+    text-align: center;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.navbar-brand {
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.navbar-item {
+    font-variant: small-caps;
+    margin-left: 30px;
+}
+
+.body-content {
+    padding: 5px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*To resize large images*/
+.resize {
+    width: 800px;
+    height: auto;
+}
+
+.resize-members {
+    width: 250px;
+    height: auto;
+}
+
+/*To resize the social media button images*/
+.icon {
+    width: 50px;
+    height: auto;
+}
+
+/*Rows and Columns to order images*/
+.row {
+    display: flex;
+}
+  
+.column {
+    flex: 33.33%;
+    padding: 5px;
+}
+
+/*<p>*/
+p {
+    text-align: center;
+}
+
+/*Headings*/
+h1 {
+    text-align: center;
+    font-size: x-large;
+}
+
+h2 {
+    text-align: center;
+    font-size: large;
+}
+
+h3 {
+    text-align: center;
+    font-size: medium;
+}
+
+/*Table*/
+td {
+    text-align: center;
+}
